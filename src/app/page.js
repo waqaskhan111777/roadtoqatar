@@ -186,8 +186,8 @@ export default function Home() {
 
       {/* U-17 FWC Section with Decorative Background */}
       <section className="relative py-12 md:py-20 lg:py-28 overflow-hidden" style={{ backgroundColor: '#C8FF00' }}>
-        {/* Decorative Background Elements */}
-        <div className="absolute top-0 left-0 w-1/4 md:w-1/3 h-full">
+        {/* Decorative Background Elements - Hidden on mobile */}
+        <div className="hidden md:block absolute top-0 left-0 w-1/4 md:w-1/3 h-full">
           <Image
             src="/images/decorative-bg-2.png"
             alt=""
@@ -195,7 +195,7 @@ export default function Home() {
             className="object-cover object-left"
           />
         </div>
-        <div className="absolute bottom-0 right-0 w-1/6 md:w-1/6 h-full z-20">
+        <div className="hidden md:block absolute bottom-0 right-0 w-1/6 md:w-1/6 h-full z-20">
           <div className="relative w-full h-full">
             <Image
               src="/images/decorative-bg-1.png"
